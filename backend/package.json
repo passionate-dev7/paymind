@@ -1,0 +1,29 @@
+{
+  "name": "paymind-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["blockchain", "ai-agent", "x402", "bsc", "defi"],
+  "author": "PayMind",
+  "license": "ISC",
+  "description": "PayMind — AI agent that autonomously pays for blockchain intelligence via x402",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.77.0",
+    "@hono/node-server": "^1.19.9",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.16.0",
+    "hono": "^4.11.10",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
